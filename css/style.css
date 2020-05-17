@@ -1,0 +1,179 @@
+/* Global Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+    /* font-weight */
+    --normal: 400;
+    --bold: 700;
+
+    --bg: hsl(257, 40%, 49%);
+    --text: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-image: url(../images/bg-desktop.svg);
+    background-color: var(--bg);
+}
+
+button {
+    cursor: pointer;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+
+
+/* container  */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 0 auto;
+}
+.container #logo {
+    width: 12rem;
+    margin-bottom: 60px;
+}
+.container .middle {
+    display: flex;
+    align-items: flex-start;
+}
+.container .middle img {
+    width: 50%;
+}
+.container .middle .texts {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text);
+}
+.container .middle .texts h2 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    line-height: 50px;
+    width: 70%;
+}
+.container .middle .texts p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+.container .middle .texts button {
+    background-color: var(--text);
+    color: var(--bg);
+    width: fit-content;
+}
+/* .container .socials {
+    text-align: right;
+}
+.container .socials .fab {
+} */
+
+/* footer */
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+    padding: 20px;
+    color: var(--text);
+    /* color: black; */
+}
+.attribution a { 
+    color: rgb(212, 207, 207);
+    text-decoration: none;
+}
+
+
+
+/* Media Queries - Responsiveness */
+/* LG - Large Screen */
+/* @media only screen and (max-width: 992px) {
+
+} */
+
+/* MD - Medium Screen */
+@media only screen and (max-width: 765px) {
+	body {
+        justify-content: initial;
+        height: fit-content;
+    }
+
+    .container {
+        align-items: center;
+        padding: 30px;
+    }
+    .container #logo {
+        width: 7rem;
+        margin-bottom: 40px;
+        align-self: flex-start;
+    }
+    .container .middle {
+        align-items: center;
+        flex-direction: column;
+    }
+    .container .middle img {
+        width: 100%;
+    }
+    .container .middle .texts {
+        padding: 0px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .container .middle .texts h2 {
+        margin: 40px 0 15px;
+        font-size: 1.6rem;
+        line-height: 33px;
+        width: 90%;
+    }
+    .container .middle .texts p {
+        margin-bottom: 15px;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .container .middle .texts button {
+        padding: 12px 80px;
+        font-size: 1rem;
+    }
+    /* .container .socials {
+        text-align: right;
+    }
+    .container .socials .fab {
+    } */
+
+	.attribution { 
+        font-size: .8rem;
+        padding: 20px 10px 0;
+    }
+}
+
+/* SM - Small Screen */
+/* @media only screen and (max-width: 576px){
+
+} */
+
+
+/* @timiodulate css template */
